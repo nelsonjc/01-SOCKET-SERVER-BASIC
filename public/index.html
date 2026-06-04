@@ -38,7 +38,8 @@
 
 
     <script>
-        const socket = io('https://01-socket-server-basic.vercel.app');
+        const socket = io('https://01-socket-server-basic.vercel.app', { transports: ['websocket'] });
+        
 
         // Referencias a los elemento del DOM
         const form = document.querySelector('#myForm');
